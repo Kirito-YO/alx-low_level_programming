@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i = 0;
-	char* c = "abcdefghijklmnopqrstuvwxyz";
+	char *c = "abcdefghijklmnopqrstuvwxyz";
 
 	do {
 		putchar(c[i]);
