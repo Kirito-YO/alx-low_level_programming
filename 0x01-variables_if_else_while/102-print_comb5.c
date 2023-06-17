@@ -6,49 +6,28 @@
  */
 int main(void)
 {
-	int i = 48;
-	int c = 48;
-	int k = 48;
-	int n = 48;
-	int a = 48;
-	int b = 48;
+	int i = 0, j = 0;
 
 	do {
+		j = 0;
 		do {
-
-        		do {
-				do {
-					k = a + b;
-					if (c == k || c > k)
-					{	
-						break;
-					}
-					else
-					{
-						putchar(i);
-						putchar(n);
-						putchar(32);
-						putchar(a);
-						putchar(b);
-					}
-						if (i == 57 && n == 56 && a == 57 && b == 57)
-						{
-							break;
-						}
-						else
-						{
-							putchar(44);
-							putchar(32);
-						}
-					b++;
-				} while (b < 58);
-				a++;
-			} while (a < 58);
-			c = i + n;
-			n++;
-		} while (n < 58);
+			if (i < j && i != j)
+			{
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
+				putchar(32);
+				putchar((j / 10) + '0');
+				putchar((j % 10) + '0');
+				if (i < 99 && j < 100)
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
+			j++;
+		} while (j < 100);
 		i++;
-	} while (i < 58);
+	} while (i < 100);
 	putchar('\n');
-return (0);
+	return (0);
 }
