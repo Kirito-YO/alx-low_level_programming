@@ -12,21 +12,20 @@ int main(void)
 		int n = 49;
 
 		do {
-			if (i != n)
-			{	
+			if (i < n)
+			{
 				putchar(i);
 				putchar(n);
-			
 				if (i < 57)
 				{
 					if (i == 56 && n == 57)
 					{
 						break;
 					}
-					else 
+					else
 					{
-					putchar(44);
-					putchar(32);
+						putchar(44);
+						putchar(32);
 					}
 				}
 			}
