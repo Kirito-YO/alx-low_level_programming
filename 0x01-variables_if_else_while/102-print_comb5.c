@@ -11,7 +11,7 @@ int main(void)
 	do {
 		j = 1;
 		do {
-			if (i != j)
+			if (i < j && i != j)
 			{
 				putchar((i / 10) + '0');
 				putchar((i % 10) + '0');
