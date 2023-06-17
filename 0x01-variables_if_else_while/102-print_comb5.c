@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	int i = 0, j = 0;
+	int i = 0, j = 1;
 
 	do {
-		j = 0;
+		j = 1;
 		do {
-			if (i < j && i != j)
+			if (i != j)
 			{
 				putchar((i / 10) + '0');
 				putchar((i % 10) + '0');
