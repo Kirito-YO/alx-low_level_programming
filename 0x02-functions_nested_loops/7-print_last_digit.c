@@ -1,3 +1,4 @@
+#include <limits.h>
 #include "main.h"
 /**
  * print_last_digit - the absolute value
@@ -8,7 +9,7 @@
  */
 int print_last_digit(int i)
 {
-	if (i < 0)
+	else if (i < 0)
 	{
 		i = i * -1;
 	}
