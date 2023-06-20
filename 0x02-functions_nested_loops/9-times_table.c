@@ -15,18 +15,22 @@ void times_table(void)
 			s = i * ii;
 			if (s > 9)
 			{
-				ss = s / 10;
-				s = s % 10;
+				ss = s % 10;
+				s = s / 10;
+				_putchar(s + '0');
 				_putchar(ss + '0');
 			}
-			_putchar(s + '0');
-			if (ii < 9)
+			else
 			{
-				_putchar(',');
-				_putchar(' ');
-				if (s < 9)
+				_putchar(s + '0');
+				if (ii < 9)
 				{
+					_putchar(',');
 					_putchar(' ');
+					if (s < 10)
+					{
+						_putchar(' ');
+					}
 				}
 			}
 		}
