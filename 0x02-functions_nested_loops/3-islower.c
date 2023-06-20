@@ -4,7 +4,7 @@
  *
  * Return: Always 0.
  *
- * c - is the char
+ * @c: The character to print
  */
 int _islower(int c)
 {
