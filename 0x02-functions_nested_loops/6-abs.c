@@ -4,7 +4,7 @@
  *
  * Return: Always positif.
  *
- * @n: The character to print
+ * @i: The character to print
  */
 int _abs(int i)
 {
