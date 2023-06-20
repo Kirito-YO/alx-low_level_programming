@@ -6,13 +6,13 @@
  *
  * @n: The character to print
  */
-int _abs(int r)
+int _abs(int i)
 {
-	int r;
+	int i;
 
-	if (r < 0)
+	if (i < 0)
 	{
-		r = r * -1;
+		i = i * -1;
 	}
-	return (r);
+	return (i);
 }
