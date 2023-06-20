@@ -21,6 +21,9 @@ void jack_bauer(void)
 					if (h1 == 2 && h2 == 3 && m1 == 5 && m2 < 10)
 					{
 						break;
+						break;
+						break;
+						break;
 					}
 					_putchar(h1 + '0');
 					_putchar(h2 + '0');
