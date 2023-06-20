@@ -6,7 +6,7 @@
  *
  * @n: The character to print
  */
-int _abs(int);
+int _abs(int)
 {
 	int r;
 
