@@ -7,5 +7,6 @@
 
 int main(void)
 {
-	new_putchar("\_putchar\n");
+	NewPutchar("_putchar\n");
+	return (0);
 }
