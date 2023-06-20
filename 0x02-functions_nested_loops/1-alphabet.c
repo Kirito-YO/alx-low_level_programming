@@ -1,12 +1,11 @@
 #include "main.h"
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+        int i = 97;
+
+        do {
+                _putchar(i);
+                i++;
+        } while (i < 123);
+        _putchar('\n');
 }
