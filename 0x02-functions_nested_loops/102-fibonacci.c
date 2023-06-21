@@ -13,7 +13,7 @@ int main(void)
 		s = f1 + f2;
 		printf("%d", s);
 		f1 = f2;
-		f2 = S;
+		f2 = s;
 		if (i == 49)
 			printf("\n");
 		else
