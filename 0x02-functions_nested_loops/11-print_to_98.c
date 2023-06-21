@@ -18,5 +18,5 @@ void print_to_98(int n)
 			_putchar(n);
 			n--;
 		}
-	} while (n != 98)
+	} while (n != 98);
 }
