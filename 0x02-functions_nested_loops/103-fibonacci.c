@@ -8,7 +8,7 @@ int main(void)
 {
 	unsigned long i, f1 = 0, f2 = 2, s, n = 0;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 35; i++)
 	{
 		if (f1 < 4000000 && (f1 % 2) == 0)
 			n = n + f1;
