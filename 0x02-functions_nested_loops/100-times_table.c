@@ -17,19 +17,14 @@ void print_times_table(int n)
 			for (ii = 0; ii <= n; ii++)
 			{
 				s = i * ii;
-				if (ii != 0)
+				if (ii != 0 && s < 100)
 				{
 					printf(",");
-					if (s < 100)
-					{
-						if (s < 10)
-						{
-							printf(" ");
-						}
-						printf(" ");
-					}
 					printf(" ");
+					if (s < 10)
+						printf(" ");
 				}
+				printf(" ");
 				printf("%d", s);
 			}
 			printf("\n");
