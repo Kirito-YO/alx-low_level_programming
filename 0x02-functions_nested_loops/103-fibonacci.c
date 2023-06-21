@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long i, f1 = 0, f2 = 2, s, n = 0;
+	unsigned long i, f1 = 1, f2 = 2, s, n = 0;
 
 	for (i = 0; i < 33; i++)
 	{
