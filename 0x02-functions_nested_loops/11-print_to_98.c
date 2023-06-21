@@ -18,7 +18,7 @@ void print_to_98(int n)
 			_putchar(l);
 			n++;
 		}
-		else if (n => 0 && n < 10)
+		else if (n >= 0 && n < 10)
 		{
 			_putchar(n);
 			n++;
