@@ -1,24 +1,23 @@
 #include "main.h"
 /**
  ** main - Entry point
- * fibonacci - print fibonacci number
+ * 
  * Return: Always 0 (Success)
  */
-int fibonacci(int n)
-{
-	if (n <= 1)
-		return n;
-	return fibonacci(n - 1) + fibonacci(n - 2);
-}
 int main(void)
 {
-	int i, r;
+	int i, f1 = 0, f2 = 1, s;
 
-	for (i = 3; i < 53; i++)
+	for (i = 0; i < 50; i++)
 	{
-		r = fibonacci(i);
-		printf("%d, ", r);
+		s = f1 + f2;
+		printf("%d", s);
+		f1 = f2;
+		f2 = S;
+		if (i == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
-	printf("\n");
 	return (0);
 }
