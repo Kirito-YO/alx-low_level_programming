@@ -3,51 +3,45 @@
  * print_to_98 - add two int
  *
  * Return: Always 0.
- *
+ *@n: the start road to 98.
  */
 void print_to_98(int n)
 {
-	int m, l;
-
-	do {
-		if (n < 9 && n < 98)
+	if (n < 0)
+	{
+		while (n != 98);
 		{
-			m = n / 10; 
-			l = n % 10;
-			_putchar(m);
-			_putchar(l);
+			printf("%d", n);
+			if (n < 98)
+			{
+				printf(", ");
+			}
 			n++;
 		}
-		else if (n >= 0 && n < 10)
+	}
+	else if (n >= 0 && n < 98)
+	{
+		while (n != 98)
 		{
-			_putchar(n);
+			printf("%d", n);
+			if (n < 98)
+			{
+				printf(", ");
+			}
 			n++;
 		}
-		else if (n < 0 && n > -10)
+	}
+	else if (n == 98)
+	{
+		printf("%d", n);
+	}
+	else 
+	{
+		printf("%d", n);
+		if (n > 98)
 		{
-			_putchar(n);
-			n++;
+			printf(", ");
 		}
-		else if (n > 98)
-		{
-			m = n / 10;
-			l = n % 10;
-			_putchar(m);
-			_putchar(l);
-			n--;
-		}
-		else
-		{
-			m = n / 10;
-			l = n % 10;
-			_putchar(m);
-			_putchar(l);
-			n++;
-		}
-		if (n != 98)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	} while (n != 98);
+		n--;
+	}
 }
