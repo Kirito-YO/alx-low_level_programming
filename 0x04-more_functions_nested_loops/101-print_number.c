@@ -1,10 +1,11 @@
 #include "main.h"
+
 /**
- * print_number - check the code
+ * print_number - print integer
  *
- * Return: null.
  * @n: integer.
  */
+
 void print_number(int n)
 {
 	int m = -1;
