@@ -3,16 +3,15 @@
  * print_diagonal - line diagonal.
  *
  * Return: null.
- * @n: numbre of _
- *
+ * @n: numbre of _.
  */
+
 void print_diagonal(int n)
 {
 	if (n > 0)
 	{
-		int j, m;
+		int j, m = 1;
 
-		m = 1;
 		while (m < (n + 1))
 		{
 			for (j = 0; j < m; j++)
@@ -21,7 +20,7 @@ void print_diagonal(int n)
 					_putchar('\\');
 				else
 					_putchar(' ');
-			}	
+			}
 			m++;
 			if (m != (n + 1))
 				_putchar('\n');
