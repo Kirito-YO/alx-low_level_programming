@@ -2,7 +2,6 @@
 /**
  * _puts - prints a string followd by new line.
  *
- * Return : stdout.
  * @str: parameter
  */
 void _puts(char *str)
@@ -12,5 +11,4 @@ void _puts(char *str)
 		_putchar(*str++);
 	}
 		_putchar('\n');
-	return (str);
 }
