@@ -4,6 +4,8 @@
  * return : lenght.
  *
  * @s: parameter
+ *
+ * Return: int. 
  */
 int _strlen(char *s)
 {
