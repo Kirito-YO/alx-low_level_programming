@@ -2,7 +2,8 @@
 /**
  * _strcpy - some.
  *
- * Return : char.
+ * Return : the value dest.
+ *
  * @dest: parameter
  * @src: parameter
  */
