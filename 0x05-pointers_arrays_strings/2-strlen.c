@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _strlen - length 
+ * strlen - length.
+ * _strlen - length.
  *
  * Return : always 0.
  * @s: parameter
