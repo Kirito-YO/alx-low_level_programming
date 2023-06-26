@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts_array - some.
+ * print_array - some.
  *
  * Return : null.
  * @a: parameter
