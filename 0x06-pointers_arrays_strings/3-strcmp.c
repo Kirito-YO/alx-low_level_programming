@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcmpmy function.
+ * _strcmp - function.
  *
  * Return: return.
  * @s1: var1.
