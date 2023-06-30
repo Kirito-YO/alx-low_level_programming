@@ -47,11 +47,12 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	*(r + d) = 0;
 	i = 0;
 	while (*(r + i) != 0)
-		i++;
-	i--;
-	for (j = 0; j < 1; j++)
 	{
-		i--;
+		i++;
+	}
+	i--;
+	for (j = 0; j < 1; j++, i--)
+	{
 		tt = *(r + j);
 		*(r + j) = *(r + i);
 		*(r + i) = tt;
