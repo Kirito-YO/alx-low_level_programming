@@ -47,7 +47,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	{
 		i--;
 		tt = *(r + j);
-		*(r + j) = *(n + i);
+		*(r + j) = *(r + i);
 		*(r + i) = tt;
 	}
 	return (r);
