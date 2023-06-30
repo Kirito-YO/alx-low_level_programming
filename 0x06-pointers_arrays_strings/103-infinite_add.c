@@ -22,8 +22,14 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		return (0);
 	while (j >= 0 || i >= 0 || E == 1)
 	{
-		s = *(n1 + i) - '0';
-		ss = *(n2 + j) - '0';
+		if (i < 0)
+			s = 0;
+		else
+			s = *(n1 + i) - '0';
+		if (j < 0)
+			ss = 0;
+		else
+			ss = *(n2 + j) - '0';
 		t = s + ss + E;
 		if (t >= 10)
 			E = 1;
