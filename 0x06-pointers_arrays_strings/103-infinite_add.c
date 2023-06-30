@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_number - function that do this.
+ * infinite_add - function that do this.
  *
  * Return: return.
  * @n1: var.
@@ -10,15 +10,45 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	unsigned int i;
+	int E = 0, i = 0, j = 0, d = 0, s = 0, ss = 0, t = 0, tt = 0;
 
-	i = n;
-	if (n < 0)
+	while (*(n1 + i) != 0)
+		i++;
+	while (*(n2 + j) != 0)
+		j++;
+	i--;
+	j--;
+	if (j >= size_r || i >= size_r)
+		return (0);
+	while (j >= 0 || i >= 0 || E == 1)
 	{
-		_putchar('-');
-		i = -n;
+		s = *(n1 + i) - '0';
+		ss = *(n2 + j) - '0';
+		t = s + ss + E;
+		if (t >= 10)
+			E = 1;
+		else
+			E = 0;
+		if (d >= (size_r - 1))
+			return (0);
+		*(r + d) = (t % 10) + '0';
+		d++;
+		j--;
+		i--;
 	}
-	if (i / 10 != 0)
-		print_number(i / 10);
-	_putchar((i % 10) + '0');
+	if (d == size_r)
+		return (0);
+	*(r + d) = 0;
+	i = 0;
+	while (*(r + i) != 0)
+		i++;
+	i--;
+	for (j = 0; j < 1; j++)
+	{
+		i--;
+		tt = *(r + j);
+		*(r + j) = *(n + i);
+		*(r + i) = tt;
+	}
+	return (r);
 }
