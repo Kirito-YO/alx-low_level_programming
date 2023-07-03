@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strstr - function do this.
+ * print_chessboard - function do this.
  * @a: var.
  *
  * Return: something.
