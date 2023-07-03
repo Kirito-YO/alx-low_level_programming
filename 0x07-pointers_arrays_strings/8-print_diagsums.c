@@ -6,7 +6,7 @@
  *
  * Return: something.
  */
-void print_diagsums(int *a, int size);
+void print_diagsums(int *a, int size)
 {
 	int i = 0, j = 0, n;
 
