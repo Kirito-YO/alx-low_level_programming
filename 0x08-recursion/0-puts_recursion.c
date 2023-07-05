@@ -5,13 +5,14 @@
  * Return: concatenation of two strings.
  * @s: var.
  */
+int i = 0;
+
 void _puts_recursion(char *s)
 {
-	int i;
-	
-	for (i = 0; s[i] != 0; i++)
-	{
-		_putchar(s[i]);
-	}
-	_putchar('\n');
+	_putchar(s[i]);
+	i++;
+	if (s[i] != 0)
+		_puts_recursion(s);
+	else if (s[i] == 0)
+		_putchar('\n');
 }
