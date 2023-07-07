@@ -8,7 +8,7 @@
  * @argv: var.
  *
  */
-int main( int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	unsigned int r = 0, i, a, b;
 
