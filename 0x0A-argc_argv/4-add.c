@@ -10,7 +10,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, r = 0, i;
+	int r = 0, i;
+	unsigned int a;
 
 	if (argc == 1)
 		printf("0\n");
