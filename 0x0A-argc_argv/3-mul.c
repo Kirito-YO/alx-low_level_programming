@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int a,b, r;
+	int a, b, r;
 
 	if (argc != 3)
 	{
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	{
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
-		r = a *b;
+		r = a * b;
 		printf("%d\n", r);
 	}
 	return (0);
