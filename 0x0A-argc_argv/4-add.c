@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		{
 			r = r + a;
 		}
-		printf("%d\n", r);
 	}
+	printf("%d\n", r);
 	return (0);
 }
