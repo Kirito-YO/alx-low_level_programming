@@ -10,27 +10,27 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned int r = 0, i, a, b;
+	 int r = 0, i, a, b;
 
 	if (argc == 1)
-		printf("0\n");
-	else
 	{
-		b = (unsigned int)(argc);
-		for (i = 1; i < b; i++)
+		printf("0\n");
+		return (0);
+	}
+	b = (int)(argc);
+	for (i = 1; i < b; i++)
+	{
+		a = atoi(argv[i]);
+		if (!isdigit(*argv[i]))
 		{
-			a = atoi(argv[i]);
-			if (!isdigit(*argv[i]))
-			{
-				printf("Error\n");
-				return (1);
-			}
-			else
-			{
-				r = r + a;
-			}
+			printf("Error\n");
+			return (1);
 		}
-		 printf("%d\n", r);
+		else
+		{
+			r = r + a;
+		}
+		printf("%d\n", r);
 	}
 	return (0);
 }
