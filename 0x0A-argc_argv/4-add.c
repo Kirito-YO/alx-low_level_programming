@@ -10,26 +10,25 @@
  */
 int main(int argc, char *argv[])
 {
-	 int r = 0, i, a, b;
+	 int r = 0, i, j, a;
 
 	if (argc == 1 || argc == 2)
 	{
 		printf("0\n");
 		return (0);
 	}
-	b = (int)(argc);
-	for (i = 1; i < b; i++)
+	for (i = 1; i < argc; i++)
 	{
+		for (j = 0; argv[i][j] != 0; j++)
+		{
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
 		a = atoi(argv[i]);
-		if (!isdigit(*argv[i]))
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			r = r + a;
-		}
+		r = r + a;
 	}
 	printf("%d\n", r);
 	return (0);
