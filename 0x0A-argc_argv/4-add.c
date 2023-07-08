@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	 int r = 0, i, a, b;
 
-	if (argc < 2)
+	if (argc == 1 || argc == 2)
 	{
 		printf("0\n");
 		return (0);
