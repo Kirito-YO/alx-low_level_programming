@@ -61,7 +61,7 @@ int number_of_words(char *str)
 	return (e);
 }
 /**
- * _len - function can do that.
+ * w_len - function can do that.
  * @str: var1.
  *
  * Return: Nothing.
