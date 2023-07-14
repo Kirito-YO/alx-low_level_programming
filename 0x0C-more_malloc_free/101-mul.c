@@ -12,11 +12,8 @@ int main(int argc, char *argv[])
 	int i, j, k, l, n, ii, jj, *kk, iii = 0;
 
 	a = argv[1], b = argv[2];
-	if (argc != 3 || !isdigit(a) || !isdigit(b))
-	{
-		printf("Error\n");
-		exit(98);
-	}
+	if (argc != 3 || !_isdigit(a) || !_isdigit(b))
+		errors();
 	i = strlen(a);
 	j = strlen(b);
 	k = i + j + 1;
@@ -51,4 +48,30 @@ int main(int argc, char *argv[])
 	_putchar('\n');
 	free(kk);
 	return (0);
+}
+/**
+ * _isdigit - function can do that.
+ * @c: var
+ *
+ * Return: On success 0.
+ */
+int _isdigit(char *c)
+{
+	int i = 0;
+
+	while (c[i])
+	{
+		if (c[i] < '0' || c[i] > '9')
+			return (0);
+		i++;
+	}
+	return (1);
+}
+/**
+ * errors - function can do that
+ */
+void errors(void)
+{
+	printf("Error\n");
+	exit(98);
 }
