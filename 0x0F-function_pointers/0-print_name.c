@@ -3,7 +3,7 @@
 /**
  * print_name - fucntion can do that
  * @name: var
- * @f:var
+ * @f: var
  * Return: nothing
  **/
 void print_name(char *name, void (*f)(char *))
