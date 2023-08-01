@@ -3,7 +3,7 @@
  * find_listint_loop - my function
  * @head: var
  *
- * Return: The address of the node where the loop starts, or NULL if there is no loop
+ * Return: NULL if there is no loop
  */
 listint_t *find_listint_loop(listint_t *head)
 {
